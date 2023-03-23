@@ -1,8 +1,10 @@
+using System;
+
 public static class Library1
 {
-    public static int GetNumber(string text)
+    public static double GetNumber(string text)
     {
-        Console.WriteLine(text);
-        return Convert.ToInt32(Console.ReadLine());
+        Console.Write(text);
+        return Convert.ToDouble(Console.ReadLine());
     }
 }

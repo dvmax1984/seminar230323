@@ -1,7 +1,8 @@
 public static class Method
 {
-  public static int GetDegree(int a, int b)
+  public static double GetDegree(double a, double b)
   {
-      return b == 0 ? 1 : GetDegree(a, b-1) * a;      
+    if (b < 0) return 1 / (GetDegree(a, b+1) * a);
+    else return b == 0 ? 1 : GetDegree(a, b-1) * a;
   }
 }
