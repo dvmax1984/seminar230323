@@ -1,4 +1,4 @@
-public static class Library
+public static class Library1
 {
     public static int GetNumber(string text)
     {
